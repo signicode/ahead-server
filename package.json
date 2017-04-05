@@ -1,0 +1,21 @@
+{
+  "name": "ahead-server-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michalcz/presentation-logeek.git"
+  },
+  "author": "Signicode <cz@signicode.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "mz": "^2.6.0",
+    "scramjet": "^2.5.2"
+  }
+}
