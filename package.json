@@ -13,10 +13,13 @@
   "author": "Signicode <cz@signicode.com>",
   "license": "UNLICENSED",
   "dependencies": {
+    "apicache": "^0.8.4",
     "cors": "^2.8.3",
     "express": "^4.15.2",
     "morgan": "^1.8.1",
     "mz": "^2.6.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3",
     "scramjet": "^2.5.2"
   }
 }
