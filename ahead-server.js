@@ -62,6 +62,10 @@ const updateStream = process.stdin.pipe(new scramjet.StringStream())
     }))
     .each(
         (chunk) => {
+
+            // updateIndex(chunk);
+            // setChunk(chunk);
+
             console.error("chunk", chunk.no);
             index.push("#EXTINF:" + conf.chunk_length);
 
@@ -70,7 +74,6 @@ const updateStream = process.stdin.pipe(new scramjet.StringStream())
             index.push("out"+no+".ts");
 
             noIndex.push(chunk.no);
-
 
             if (index.length > conf.index_length * 2) {
                 index.shift();
