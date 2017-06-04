@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SmoothStreamingMedia MajorVersion="2" MinorVersion="0" Duration="0" TimeScale="10000000" IsLive="1" LookaheadCount="{{lookahead}}">
+    <StreamIndex Type="video" QualityLevels="1" MaxWidth="720" MaxHeight="480" TimeScale="10000000" Name="video" Url="video/{bitrate}/{start_time}">
+        <QualityLevel Index="0" Bitrate="1536000" FourCC="AVC1" MaxWidth="720" MaxHeight="480" />
+        {{#chunks}}
+            <c n="{{chunk_number}}" d="{{chunk_duration}}">
+        {{/chunk}}
+    </StreamIndex>
+
+    <StreamIndex Type="audio" Chunks="0" Language="eng" QualityLevels="1" TimeScale="10000000" Url="audio/{bitrate}/{start_time}">
+        <QualityLevel Index="0" Bitrate="94208" FourCC="AAC" SamplingRate="48000" Channels="2" BitsPerSample="16" />
+        {{#chunks}}
+            <c n="{{chunk_number}}" d="{{chunk_duration}}">
+        {{/chunk}}
+    </StreamIndex>
+</SmoothStreamingMedia>
