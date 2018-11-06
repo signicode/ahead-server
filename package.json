@@ -14,12 +14,12 @@
   "license": "UNLICENSED",
   "dependencies": {
     "apicache": "^1.2.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "morgan": "^1.9.1",
     "mz": "^2.7.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
-    "scramjet": "^4.18.12"
+    "scramjet": "^4.18.15"
   }
 }
