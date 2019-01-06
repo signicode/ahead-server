@@ -20,6 +20,6 @@
     "mz": "^2.7.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
-    "scramjet": "^4.19.0"
+    "scramjet": "^4.20.0"
   }
 }
