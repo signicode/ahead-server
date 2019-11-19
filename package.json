@@ -19,7 +19,7 @@
     "morgan": "^1.9.1",
     "mz": "^2.7.0",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.7",
-    "scramjet": "^4.27.1"
+    "request-promise-native": "^1.0.8",
+    "scramjet": "^4.27.2"
   }
 }
