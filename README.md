@@ -1,8 +1,9 @@
 Ahead LHS
 ===========
 
-Sub second latency HLS and DASH Server and CDN
+Low latency HLS and DASH Server and CDN example:
 
+```sh
 ffmpeg -thread_queue_size 32 \
         -f v4l2 -input_format mjpeg -video_size 640x360 -framerate 30 -i /dev/video0 \
         -f alsa -i hw:3 -map 0 \
@@ -12,6 +13,27 @@ ffmpeg -thread_queue_size 32 \
             -segment_list_type csv -segment_time .5 -segment_list pipe:1 \
             -segment_wrap 99 work/out%02d.ts \
     | node ./ahead-server.js
+```
+
+See the samples in:
+
+* `generate.sh` - generated image on the server
+* `test-publish.sh` - an RTMP publishing point
+* `test-win.sh` - simple windows example straight from a webcam
+* `test.sh` - run on linux.
+
+In order to run Ahead LHS you need to execute any ffmpeg stream with the follwing output:
+
+```text
+-f ssegment
+-segment_list_flags live \
+-segment_list_type csv
+-segment_time .5
+-segment_list pipe:1 \
+-segment_wrap 99 work/out%02d.ts
+```
+
+The csv outputted by the above setup to stdout is parsed by Ahead on stdin and served immediately to the queued requests. The playlist is delivered ahead of time, hence the name.
 
 License
 --------
