@@ -1,4 +1,4 @@
-Ahead LSH
+Ahead LHS
 ===========
 
 Sub second latency HLS and DASH Server and CDN
@@ -16,4 +16,4 @@ ffmpeg -thread_queue_size 32 \
 License
 --------
 
-THIS IS NOT LICENSED. YOU HAVE NO RIGHT TO USE THIS UNLESS YOU HAVE A WRITTEN PERMISSION FROM THE RIGHTS OWNER!
+Ahead server is licensed under GNU Affero GPL 3.0. The details of the license can be found in the [LICENSE](./LICENSE) file.

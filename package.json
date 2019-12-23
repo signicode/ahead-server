@@ -11,7 +11,7 @@
     "url": "https://github.com/michalcz/presentation-logeek.git"
   },
   "author": "Signicode <cz@signicode.com>",
-  "license": "UNLICENSED",
+  "license": "AGPL-3.0-or-later",
   "dependencies": {
     "apicache": "^1.5.2",
     "cors": "^2.8.5",
