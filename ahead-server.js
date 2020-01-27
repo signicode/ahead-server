@@ -1,9 +1,8 @@
 const express = require("express");
-const scramjet = require("scramjet");
 const cors = require("cors");
-const csvToArray = require("./lib/csv-to-array");
 const chunkdb = require("./lib/chunk-db");
 const morgan = require("morgan");
+const getChunkStream = require("./lib/chunk-stream");
 
 const playlistHeader = "#EXTM3U\n#EXT-X-TARGETDURATION:1\n#EXT-X-VERSION:3\n";
 
@@ -19,16 +18,9 @@ const conf = {
 };
 
 const chunks = chunkdb();
+const chunkStream = getChunkStream("ffmpeg-csv", process.stdin);
 
-const updateStream = process.stdin.pipe(new scramjet.StringStream())
-    .split(/\r?\n/)
-    .parse(csvToArray)
-    .map(arr => ({
-        file: arr[0],
-        no: arr[0].substr(3,3),
-        start_ts: arr[1],
-        end_ts: arr[2]
-    }))
+const updateStream = chunkStream
     .each(
         (chunk) => {
             console.error("chunk", chunk.no);
@@ -39,7 +31,6 @@ const updateStream = process.stdin.pipe(new scramjet.StringStream())
             index.push("out"+no+".ts");
 
             noIndex.push(chunk.no);
-
 
             if (index.length > conf.index_length * 2) {
                 index.shift();

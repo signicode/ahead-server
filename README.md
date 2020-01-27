@@ -35,6 +35,17 @@ In order to run Ahead LHS you need to execute any ffmpeg stream with the follwin
 
 The csv outputted by the above setup to stdout is parsed by Ahead on stdin and served immediately to the queued requests. The playlist is delivered ahead of time, hence the name.
 
+The intention behind this
+---------------------------
+
+This software is intended to be a good http server that can serve files that don't yet exist. There are good encoders and good segmenters already, so we don't want to go into chunking
+the video stream on our own.
+
+The server is intended to:
+
+1. Create a playlist - hls, dash and whatever else.
+2. Stream the files out as soon as possible (best before they are completed)
+
 License
 --------
 
