@@ -21,7 +21,7 @@
     "mz": "^2.7.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.8",
-    "scramjet": "^4.33.0"
+    "scramjet": "^4.33.4"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
