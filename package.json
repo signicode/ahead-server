@@ -20,11 +20,11 @@
     "morgan": "^1.10.0",
     "mz": "^2.7.0",
     "request": "^2.88.2",
-    "request-promise-native": "^1.0.8",
-    "scramjet": "^4.33.5"
+    "request-promise-native": "^1.0.9",
+    "scramjet": "^4.34.1"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-config-scramjet": "^2.0.1"
   }
 }
