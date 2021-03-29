@@ -13,7 +13,7 @@
   "author": "Signicode <cz@signicode.com>",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "apicache": "^1.5.3",
+    "apicache": "^1.6.2",
     "cors": "^2.8.5",
     "eslint-plugin-node": "^11.1.0",
     "express": "^4.17.1",
@@ -21,10 +21,10 @@
     "mz": "^2.7.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
-    "scramjet": "^4.35.2"
+    "scramjet": "^4.35.14"
   },
   "devDependencies": {
-    "eslint": "^7.10.0",
+    "eslint": "^7.23.0",
     "eslint-config-scramjet": "^3.0.0"
   }
 }
