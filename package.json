@@ -24,7 +24,7 @@
     "scramjet": "^4.35.17"
   },
   "devDependencies": {
-    "eslint": "^7.26.0",
+    "eslint": "^7.28.0",
     "eslint-config-scramjet": "^3.0.0"
   }
 }
