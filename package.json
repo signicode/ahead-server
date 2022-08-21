@@ -13,18 +13,18 @@
   "author": "Signicode <cz@signicode.com>",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "apicache": "^1.6.2",
+    "apicache": "^1.6.3",
     "cors": "^2.8.5",
     "eslint-plugin-node": "^11.1.0",
-    "express": "^4.17.1",
+    "express": "^4.18.1",
     "morgan": "^1.10.0",
     "mz": "^2.7.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
-    "scramjet": "^4.35.17"
+    "scramjet": "^4.36.8"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
+    "eslint": "^8.22.0",
     "eslint-config-scramjet": "^3.0.0"
   }
 }
